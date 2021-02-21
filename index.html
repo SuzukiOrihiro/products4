@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クエスト一覧 | SEWE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 共通化パーツ【header】ログイン後 -->
+    <!-- タブレット&PC ログイン後 -->
+    <div class="header-after">
+        <!--PC ログイン後 -->
+        <header class="after-login">
+          <nav>
+            <div class="nav-left">
+              <ul>
+                <li>
+                  <img src="./image/sfwe.png" alt="写真" />
+                </li>
+                <li><a href="#">仕事を探す</a></li>
+                <li>
+                  <form action="cgi-bin/example.cgi" method="post">
+                    <input
+                      type="search"
+                      name="search"
+                      placeholder="キーワードを入力"
+                    />
+                    <input type="submit" name="submit" value="検索" />
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-right-2">
+              <ul>
+                <li><a href="#">コンプリートガイド</a></li>
+                <li>
+                  <a href="#"><img src="./image/self-photo.png" /></a>
+                </li>
+                <li><a href="#">ニックネーム</a></li>
+                <li><a id="menuButton-3" href="#">各種メニュー</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- ニックネームを押すと出る -->
+          <nav id="global-nav-3">
+            <ul>
+              <li><h4>プロフィール</h4></li>
+              <li><a href="#">現在のレベル</a></li>
+              <li><a href="#">獲得報酬</a></li>
+              <li><h4>クエスト</h4></li>
+              <li><a href="#">クエスト一覧</a></li>
+              <li><a href="#">ダイレクトメッセージ</a></li>
+              <li><h4>設定</h4></li>
+              <li><a href="#">プロフィール設定</a></li>
+              <li><a href="#">本人確認資料</a></li>
+              <li><a href="#">ログアウト</a></li>
+              <li><a href="#">獲得報酬振り込み</a></li>
+            </ul>
+          </nav>
+        </header>
+  
+        <!-- スマホ用  ログイン後-->
+        <header class="after-login-smart">
+          <nav class="nav-smart">
+            <div class="nav-left">
+              <img src="./image/sfwe.png" alt="写真" />
+            </div>
+            <div class="nav-right">
+              <!-- ハンバーガーメニュー -->
+              <a class="menuButton" id="menuButton-2">
+                <div></div>
+                <div></div>
+                <div></div>
+              </a>
+            </div>
+          </nav>
+          <!-- ハンバーガーメニューを押すと出る -->
+          <nav id="global-nav-2">
+            <div class="inner">
+              <ul class="global-list">
+                <li class="global-item"><a href="#">仕事を探す</a></li>
+                <li class="global-item-2">
+                  <form action="cgi-bin/example.cgi" method="post">
+                    <input
+                      type="search"
+                      name="search"
+                      placeholder="キーワードを入力"
+                    />
+                    <input type="submit" name="submit" value="検索" />
+                  </form>
+                </li>
+                <li class="global-item-3"><a href="#">コンプリートガイド</a></li>
+                <li class="global-item-4">
+                  <a href="#"><img src="./image/self-photo.png" /></a>
+                </li>
+                <li class="global-item-5"><a href="#">ニックネーム</a></li>
+              </ul>
+              <nav class="menu">
+                <ul>
+                  <li><h4>プロフィール</h4></li>
+                  <li><a href="#">現在のレベル</a></li>
+                  <li><a href="#">獲得報酬</a></li>
+                  <li><h4>クエスト</h4></li>
+                  <li><a href="#">クエスト一覧</a></li>
+                  <li><a href="#">ダイレクトメッセージ</a></li>
+                  <li><h4>設定</h4></li>
+                  <li><a href="#">プロフィール設定</a></li>
+                  <li><a href="#">本人確認資料</a></li>
+                  <li><a href="#">ログアウト</a></li>
+                  <li><a href="#">獲得報酬振り込み</a></li>
+                </ul>
+              </nav>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+
+    <!--main PC&タブレット-->
+    <main class="tablet-pc">
+        <div class="container">
+            <h1>クエスト一覧</h1>
+            <div class="block">
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item">
+                    <!--ユーザー-->
+                    <div class="user">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image">
+                            <p class="user-name">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line" style="background-color:gray; width:2px; margin-right: 30px;"></div>
+                    <!--仕事-->
+                    <div class="contents">
+                        <div class="quest">
+                            <h3 class="contents-item1">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link">ダイレクトメッセージへ</p></a>
+                        </div>
+                        <!--販売日-->
+                        <div class="saledate">
+                            <h3 class="contents-item2">販売日</h3>
+                            <p>例：2020/6/18</p>
+                        </div>
+                        <!--販売金額-->
+                        <div class="saleprice">
+                            <h3 class="contents-item3">販売金額</h3>
+                            <p>例：30,000円</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--/main-->
+
+    <!--main スマホ-->
+    <main class="smart">
+        <div class="container-2">
+            <h1>クエスト一覧</h1>
+            <div class="block-2">
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-item-2">
+                    <!--ユーザー-->
+                    <div class="user-2">
+                        <a href="#">
+                            <img src="image/self-photo-2.png" alt="" class="user-image-2">
+                            <p class="user-name-2">ユーザー名</p>
+                        </a>
+                    </div>
+                    <div class="line-2" style="background-color:gray; width:2px; margin-right: 10px;"></div>
+                    <!--仕事-->
+                    <div class="contents-2">
+                        <div class="quest-2">
+                            <h3 class="contents-item1-2">クエストの内容</h3>
+                            <p class="quest-title">挑戦メッセージ</p>
+                            <p class="quest-dm">DMの冒頭部分</p>
+                            <a href="#"><p class="dm-link-2">ダイレクトメッセージへ</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--/main-->
+
+
+
+   <!-- 共通化パーツ【footer】 -->
+   <footer class="footer-2">
+    <img src="./image/sfwe.png" alt="写真">
+    <div class="footer-right">
+      <ul>
+        <li><a class="footer-right-1">特定商取引に基づく表記</a></li>
+        <li><a class="footer-right-2">利用規約</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  <script type="text/javascript">
+// document.addEventListener('DOMContentLoaded',function() {
+ $(function() { 
+
+
+
+    document.getElementById("menuButton-2").addEventListener("click", function() {
+      this.classList.toggle("active");
+    //   document.getElementById("#global-nav-2").classList.toggle("active");
+    })
+ 
+
+    $("#menuButton-2").click(function(){
+      $("#global-nav-2").stop().fadeToggle(1000);
+      return false;
+    });
+
+    $(document).ready(function(){
+     $("#global-nav-3").hide();
+     var flg = "close";
+      
+     $("#menuButton-3").click(function(){      
+         $("#global-nav-3").slideToggle();
+         if(flg == "close"){
+             $(this).text("　閉じる　　");
+             flg = "open";
+         }else{
+             $(this).text("各種メニュー");
+             flg = "close";
+         }
+     });
+ });
+
+ 
+
+// ここまで
+})
+  </script>
+    
+</body>
+</html>
