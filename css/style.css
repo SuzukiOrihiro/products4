@@ -1,0 +1,1167 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  margin: 0;
+  background-color: #0F4F81;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
+
+.header-before {
+  display: none;
+}
+
+@media (min-width: 1366px) {
+  .before-login-smart {
+    display: none;
+  }
+  .after-login-smart {
+    display: none;
+  }
+}
+
+.before-login,
+.after-login {
+  height: 111px;
+  width: 100%;
+  background-color: #0f4f81;
+}
+
+.before-login nav,
+.after-login nav {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.before-login nav .nav-left,
+.after-login nav .nav-left {
+  float: left;
+}
+
+.before-login nav .nav-left ul,
+.after-login nav .nav-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.before-login nav .nav-left ul li,
+.after-login nav .nav-left ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.before-login nav .nav-left ul li img,
+.after-login nav .nav-left ul li img {
+  width: 152px;
+  height: 69px;
+  margin-top: 18px;
+  margin-left: 34px;
+}
+
+.before-login nav .nav-left ul li a,
+.after-login nav .nav-left ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.before-login .nav-left li:nth-of-type(2),
+.after-login .nav-left li:nth-of-type(2) {
+  margin-left: 30px;
+  margin-top: 33px;
+}
+
+.before-login .nav-left li:nth-of-type(3),
+.after-login .nav-left li:nth-of-type(3) {
+  margin-top: 33px;
+  margin-left: 42px;
+  line-height: 1;
+}
+
+.before-login .nav-left li:nth-of-type(3) input,
+.after-login .nav-left li:nth-of-type(3) input {
+  height: 35px;
+}
+
+.before-login .nav-right,
+.after-login .nav-right {
+  float: right;
+}
+
+.before-login .nav-right ul,
+.after-login .nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 37px;
+}
+
+.before-login .nav-right ul li,
+.after-login .nav-right ul li {
+  list-style: none;
+}
+
+.before-login .nav-right ul li a,
+.after-login .nav-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+.before-login .nav-right li:nth-child(2),
+.after-login .nav-right li:nth-child(2) {
+  margin-right: 38px;
+  margin-left: 37px;
+}
+
+.before-login .nav-right-2,
+.after-login .nav-right-2 {
+  float: right;
+}
+
+.before-login .nav-right-2 ul,
+.after-login .nav-right-2 ul {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.before-login .nav-right-2 ul li,
+.after-login .nav-right-2 ul li {
+  list-style: none;
+}
+
+.before-login .nav-right-2 ul li img,
+.after-login .nav-right-2 ul li img {
+  width: 85px;
+  height: 85px;
+  margin-top: 17px;
+}
+
+.before-login .nav-right-2 ul li a,
+.after-login .nav-right-2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.before-login .nav-right-2 li:nth-child(1),
+.after-login .nav-right-2 li:nth-child(1) {
+  margin-right: 20px;
+  margin-top: 37px;
+  line-height: 1;
+}
+
+.before-login .nav-right-2 li:nth-child(3),
+.after-login .nav-right-2 li:nth-child(3) {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 37px;
+  line-height: 1;
+}
+
+.before-login .nav-right-2 li:nth-child(4),
+.after-login .nav-right-2 li:nth-child(4) {
+  margin-right: 20px;
+  margin-top: 37px;
+  line-height: 1;
+}
+
+.before-login #global-nav-3,
+.after-login #global-nav-3 {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 111px;
+  width: 300px;
+  height: auto;
+  background: #59a0bb;
+  z-index: 999;
+}
+
+.before-login #global-nav-3 li,
+.after-login #global-nav-3 li {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.before-login #global-nav-3 li h4,
+.after-login #global-nav-3 li h4 {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 0 10px;
+  padding-top: 15px;
+}
+
+.before-login #global-nav-3 li a,
+.after-login #global-nav-3 li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .before-login {
+    display: none;
+  }
+  .after-login {
+    display: none;
+  }
+  .before-login-smart .nav-smart {
+    position: fixed;
+    background-color: #0f4f81;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .before-login-smart .nav-smart .nav-left {
+    float: left;
+  }
+  .before-login-smart .nav-smart .nav-left img {
+    width: 100px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 34px;
+  }
+  .before-login-smart .nav-smart .nav-right {
+    float: right;
+    margin-right: 20px;
+    /* ×を作る */
+    /* ２番目の線は消える */
+    /* ここまでハンバーガーメニュー */
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border: 1px solid white;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    /* position: fixed; */
+    z-index: 999;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div {
+    height: 4px;
+    /* 線の長さ */
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(1) {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(3) {
+    -webkit-transform: translate(-50%, -13px);
+            transform: translate(-50%, -13px);
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(-50%, 0px);
+            transform: rotate(45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0px);
+            transform: rotate(-45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .before-login-smart #global-nav {
+    width: 100%;
+    /* 必要 */
+    position: absolute;
+    top: 60px;
+    z-index: 10;
+    opacity: 0.9;
+    display: none;
+    position: fixed;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+  .before-login-smart .global-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .before-login-smart .global-item {
+    width: 100%;
+    height: 58px;
+    background-color: #0f4f81;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .before-login-smart .global-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .after-login-smart .nav-smart {
+    position: fixed;
+    background-color: #0f4f81;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .after-login-smart .nav-smart .nav-left {
+    float: left;
+  }
+  .after-login-smart .nav-smart .nav-left img {
+    width: 100px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 34px;
+  }
+  .after-login-smart .nav-smart .nav-right {
+    float: right;
+    margin-right: 20px;
+    /* ×を作る */
+    /* ２番目の線は消える */
+    /* ここまでハンバーガーメニュー */
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border: 1px solid white;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    /* position: fixed; */
+    z-index: 999;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div {
+    height: 4px;
+    /* 線の長さ */
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(1) {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(3) {
+    -webkit-transform: translate(-50%, -13px);
+            transform: translate(-50%, -13px);
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(-50%, 0px);
+            transform: rotate(45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0px);
+            transform: rotate(-45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .after-login-smart #global-nav-2 {
+    z-index: 999;
+    background-color: #0f4f81;
+    width: 100%;
+    /* 必要 */
+    position: absolute;
+    top: 60px;
+    opacity: 0.9;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+  .after-login-smart #global-nav-2 .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .after-login-smart #global-nav-2 .inner .menu {
+    background-color: #59a0bb;
+    width: 100%;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul {
+    max-width: 100%;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li {
+    list-style: none;
+    margin-left: -40px;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 23px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .after-login-smart #global-nav-2 .global-list {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item {
+    width: 100%;
+    background-color: #0f4f81;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 10%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-2 {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 2%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-4 {
+    width: 100%;
+    height: 50px;
+    background-color: #0f4f81;
+    list-style: none;
+    text-align: left;
+    padding-left: 10%;
+    margin: 0;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-3 {
+    width: 100%;
+    height: 20px;
+    background-color: #0f4f81;
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-5 {
+    width: 100%;
+    list-style: none;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-5 a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1366px) {
+  .before-login {
+    display: none;
+  }
+  .after-login {
+    display: none;
+  }
+  .before-login-smart .nav-smart {
+    position: fixed;
+    background-color: #0f4f81;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .before-login-smart .nav-smart .nav-left {
+    float: left;
+  }
+  .before-login-smart .nav-smart .nav-left img {
+    width: 152px;
+    height: 69px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .before-login-smart .nav-smart .nav-right {
+    float: right;
+    margin-right: 20px;
+    /* ×を作る */
+    /* ２番目の線は消える */
+    /* ここまでハンバーガーメニュー */
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    /* position: fixed; */
+    z-index: 999;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div {
+    height: 4px;
+    /* 線の長さ */
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(1) {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(3) {
+    -webkit-transform: translate(-50%, -13px);
+            transform: translate(-50%, -13px);
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(-50%, 0px);
+            transform: rotate(45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .before-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0px);
+            transform: rotate(-45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .before-login-smart #global-nav {
+    width: 100%;
+    /* 必要 */
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+    opacity: 0.9;
+    display: none;
+    position: fixed;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+  .before-login-smart .global-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .before-login-smart .global-item {
+    width: 100%;
+    height: 58px;
+    background-color: #0f4f81;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .before-login-smart .global-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .after-login-smart .nav-smart {
+    position: fixed;
+    background-color: #0f4f81;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    height: 90px;
+  }
+  .after-login-smart .nav-smart .nav-left {
+    float: left;
+  }
+  .after-login-smart .nav-smart .nav-left img {
+    width: 152px;
+    height: 69px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .after-login-smart .nav-smart .nav-right {
+    float: right;
+    margin-right: 20px;
+    /* ×を作る */
+    /* ２番目の線は消える */
+    /* ここまでハンバーガーメニュー */
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    /* position: fixed; */
+    z-index: 999;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div {
+    height: 4px;
+    /* 線の長さ */
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(1) {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton div:nth-of-type(3) {
+    -webkit-transform: translate(-50%, -13px);
+            transform: translate(-50%, -13px);
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(-50%, 0px);
+            transform: rotate(45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .after-login-smart .nav-smart .nav-right .menuButton.active div:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0px);
+            transform: rotate(-45deg) translate(-50%, 0px);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .after-login-smart #global-nav-2 {
+    z-index: 999;
+    background-color: #0f4f81;
+    width: 100%;
+    /* 必要 */
+    position: absolute;
+    top: 90px;
+    opacity: 0.9;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+  .after-login-smart #global-nav-2 .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .after-login-smart #global-nav-2 .inner .menu {
+    background-color: #59a0bb;
+    width: 100%;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul {
+    max-width: 100%;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li {
+    list-style: none;
+    margin-left: -40px;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .after-login-smart #global-nav-2 .inner .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 80px;
+  }
+  .after-login-smart #global-nav-2 .global-list {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item {
+    width: 100%;
+    height: auto;
+    background-color: #0f4f81;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-2 {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 10%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-2 input {
+    height: 30px;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-4 {
+    width: 100%;
+    height: 50px;
+    background-color: #0f4f81;
+    list-style: none;
+    text-align: left;
+    padding-left: 10%;
+    margin: 0;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-3 {
+    width: 100%;
+    height: 20px;
+    background-color: #0f4f81;
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-5 {
+    width: 100%;
+    background-color: #0f4f81;
+    list-style: none;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .after-login-smart #global-nav-2 .global-list .global-item-5 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 10%;
+  }
+}
+
+.smart {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+}
+
+.block-item {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.block-item h3 {
+  margin: 10px;
+}
+
+.block-item .user {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.block-item .user .user-image {
+  width: 5rem;
+  margin-top: 3rem;
+}
+
+.block-item .user a {
+  text-decoration: none;
+}
+
+.block-item .contents {
+  width: 100%;
+}
+
+.block-item .contents .quest {
+  width: 33%;
+}
+
+.block-item .contents .quest .quest-title {
+  border: solid 1px #000;
+  color: gray;
+}
+
+.block-item .contents .quest .quest-dm {
+  border: solid 1px #000;
+  padding-bottom: 25px;
+  color: gray;
+}
+
+.block-item .contents .quest a {
+  text-decoration: none;
+}
+
+.block-item .contents .saledate {
+  width: 33%;
+  text-align: center;
+}
+
+.block-item .contents .saledate p {
+  margin-top: 48px;
+}
+
+.block-item .contents .saleprice {
+  width: 33%;
+  text-align: center;
+}
+
+.block-item .contents .saleprice p {
+  margin-top: 48px;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.container-2 h1 {
+  font-size: 20px;
+}
+
+.container-2 .block-item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.container-2 .block-item-2 .user-2 {
+  margin-top: 2rem;
+}
+
+.container-2 .block-item-2 .user-2 a {
+  text-decoration: none;
+}
+
+.container-2 .block-item-2 .user-2 .user-image-2 {
+  width: 57px;
+}
+
+.container-2 .block-item-2 .user-2 p {
+  font-size: 8px;
+  text-align: center;
+}
+
+.container-2 .contents-2 {
+  width: 100%;
+}
+
+.container-2 .contents-2 .quest-2 a {
+  text-decoration: none;
+}
+
+.container-2 .contents-2 .quest-2 .contents-item1-2 {
+  margin: 0px;
+}
+
+.container-2 .contents-2 .quest-2 .quest-title {
+  border: solid 1px #000;
+  width: 90%;
+  color: gray;
+}
+
+.container-2 .contents-2 .quest-2 .quest-dm {
+  border: solid 1px #000;
+  width: 90%;
+  padding-bottom: 10px;
+  color: gray;
+}
+
+.container-2 .contents-2 .quest-2 p {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .tablet-pc {
+    display: none;
+  }
+  .smart {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .line {
+    margin-right: 10px !important;
+  }
+  .contents {
+    width: 100%;
+  }
+  .contents .quest {
+    width: 50%;
+  }
+  .contents .quest .textarea {
+    width: 100%;
+  }
+  .contents .quest p {
+    font-size: 15px;
+  }
+  .contents .saledate {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer img {
+  width: 167px;
+  height: 78px;
+  margin: 106px 0 74px 75px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin: 152px 78px 0 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer {
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer img {
+    width: 100px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  footer a {
+    margin: 20px 30px 0 0;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  footer img {
+    width: 152px;
+    height: 69px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer a {
+    color: white;
+    font-size: 24px;
+  }
+}
+
+.footer-2 img {
+  float: left;
+  width: 167px;
+  height: 78px;
+  margin: 47px 0 85px 126px;
+}
+
+.footer-2 .footer-right ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 82px;
+}
+
+.footer-2 .footer-right ul li {
+  list-style: none;
+}
+
+.footer-2 .footer-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.footer-2 .footer-right ul li .footer-right-1 {
+  margin-right: 0;
+}
+
+.footer-2 .footer-right ul li .footer-right-2 {
+  margin: 0 126px 0 51px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-2 {
+    width: 100%;
+    height: 60px;
+  }
+  .footer-2 img {
+    float: left;
+    width: 100px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer-2 .footer-right ul {
+    float: right;
+    display: block;
+    margin-top: 5px;
+    margin-right: 12px;
+  }
+  .footer-2 .footer-right ul li {
+    list-style: none;
+  }
+  .footer-2 .footer-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .footer-2 .footer-right ul li .footer-right-1 {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-2 .footer-right ul li .footer-right-2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .footer-2 img {
+    float: left;
+    width: 152px;
+    height: 69px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 47px 0 85px 8%;
+  }
+  .footer-2 .footer-right ul {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 82px;
+  }
+  .footer-2 .footer-right ul li {
+    list-style: none;
+  }
+  .footer-2 .footer-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  .footer-2 .footer-right ul li .footer-right-1 {
+    margin-right: 0;
+  }
+  .footer-2 .footer-right ul li .footer-right-2 {
+    margin: 0 126px 0 51px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
